@@ -4,8 +4,8 @@
 ```yml
 steps:
   - uses: actions/checkout@v2
-  - name: create proxy conf
-  - uses: KotKompot0/github-set-proxy-conf-angular@v0.1.0
+  - name: github-set-proxy-angular
+    uses: kotorkovsciy/github-set-proxy-conf-angular@v0.1.0
     with:
       path: "./proxy.conf.json"
       target: "http://localhost:8080"
