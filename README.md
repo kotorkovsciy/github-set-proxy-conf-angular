@@ -5,7 +5,7 @@
 steps:
   - uses: actions/checkout@v2
   - name: create proxy conf
-  - uses: KotKompot0/github-create-proxy-conf-angular
+  - uses: KotKompot0/github-create-proxy-conf-angular@v0.1.0
     with:
       path: "./proxy.conf.json"
       target: "http://localhost:8080"
