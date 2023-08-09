@@ -1,0 +1,37 @@
+name: 'github-create-proxy-angular'
+description: 'Creates a proxy for angular'
+branding:
+  icon: settings
+  color: black
+inputs:
+  path:
+    default: "./proxy.conf.json"
+  target:
+    default: "http://localhost:8080"
+  url:
+    default: "/api"
+  secure:
+    default: "false"
+  pathRewriteOld:
+    default: "null"
+  pathRewriteNew:
+    default: "null"
+  changeOrigin:
+    default: "null"
+  logLevel:
+    default: "null"
+  type:
+    default: "create"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+      - ${{ inputs.path }}
+      - ${{ inputs.target }}
+      - ${{ inputs.url }}
+      - ${{ inputs.secure }}
+      - ${{ inputs.pathRewriteOld }}
+      - ${{ inputs.pathRewriteNew }}
+      - ${{ inputs.changeOrigin }}
+      - ${{ inputs.logLevel }}
+      - ${{ inputs.type }}
