@@ -1,4 +1,4 @@
-name: 'github-create-proxy-angular'
+name: 'github-set-proxy-angular'
 description: 'Creates a proxy for angular'
 branding:
   icon: settings
